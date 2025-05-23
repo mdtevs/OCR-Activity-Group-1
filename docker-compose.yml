@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"  # You can change 8080 to any free port on your host
+    volumes:
+      - .:/var/www/html
+    container_name: php-tesseract-app
+
